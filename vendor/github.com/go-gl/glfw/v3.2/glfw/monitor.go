@@ -1,5 +1,6 @@
 package glfw
 
+//#define GLFW_INCLUDE_NONE
 //#include "glfw/include/GLFW/glfw3.h"
 //GLFWmonitor* GetMonitorAtIndex(GLFWmonitor **monitors, int index);
 //GLFWvidmode GetVidmodeAtIndex(GLFWvidmode *vidmodes, int index);
@@ -12,6 +13,7 @@ import (
 	"unsafe"
 )
 
+// Monitor represents a monitor.
 type Monitor struct {
 	data *C.GLFWmonitor
 }
